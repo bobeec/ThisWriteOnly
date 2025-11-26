@@ -1,0 +1,175 @@
+# Copyright (C) 2024 BLOGthemeWP Team
+# This file is distributed under the same license as the BLOGthemeWP package.
+msgid ""
+msgstr ""
+"Project-Id-Version: BLOGthemeWP 0.1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/bobeec/BLOGthemeWP/issues\n"
+"POT-Creation-Date: 2024-01-15 00:00:00+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2024-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: none\n"
+"X-Domain: blogthemewp\n"
+
+#: functions.php
+msgid "BLOGthemeWP Settings"
+msgstr ""
+
+#: functions.php
+msgid "Main Color"
+msgstr ""
+
+#: functions.php
+msgid "Select the theme color used for links and buttons."
+msgstr ""
+
+#: functions.php
+msgid "Site Icon"
+msgstr ""
+
+#: functions.php
+msgid "Upload your blog icon (512x512px recommended)"
+msgstr ""
+
+#: functions.php
+msgid "Header Image"
+msgstr ""
+
+#: functions.php
+msgid "Main Menu"
+msgstr ""
+
+#: functions.php
+msgid "Footer Widget"
+msgstr ""
+
+#: functions.php
+msgid "Widget area displayed in footer."
+msgstr ""
+
+#: header.php
+msgid "Skip to content"
+msgstr ""
+
+#: header.php
+msgid "Main Menu"
+msgstr ""
+
+#: single.php, template-parts/content-card.php
+msgid "%s min read"
+msgstr ""
+
+#: single.php
+msgid "Previous Post"
+msgstr ""
+
+#: single.php
+msgid "Next Post"
+msgstr ""
+
+#: inc/template-tags.php
+msgid "just now"
+msgstr ""
+
+#: inc/template-tags.php
+msgid "%s hours ago"
+msgstr ""
+
+#: inc/template-tags.php
+msgid "%s days ago"
+msgstr ""
+
+#: archive.php
+msgid "Category:"
+msgstr ""
+
+#: archive.php
+msgid "Tags:"
+msgstr ""
+
+#: search.php
+msgid "Search Results for: %s"
+msgstr ""
+
+#: search.php
+msgid "No results found. Please try a different keyword."
+msgstr ""
+
+#: 404.php
+msgid "Page not found."
+msgstr ""
+
+#: 404.php
+msgid "Back to Home"
+msgstr ""
+
+#: comments.php
+msgid "%s comment"
+msgid_plural "%s comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php
+msgid "Leave a comment"
+msgstr ""
+
+#: comments.php
+msgid "Reply to %s"
+msgstr ""
+
+#: comments.php
+msgid "Cancel"
+msgstr ""
+
+#: comments.php
+msgid "Submit Comment"
+msgstr ""
+
+#: comments.php
+msgid "Comment"
+msgstr ""
+
+#: comments.php
+msgid "Comments are closed."
+msgstr ""
+
+#: comments.php
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: comments.php
+msgid "Older comments"
+msgstr ""
+
+#: comments.php
+msgid "Newer comments"
+msgstr ""
+
+#: template-parts/content-none.php
+msgid "No posts found"
+msgstr ""
+
+#: template-parts/content-none.php
+msgid "Try posting your first article."
+msgstr ""
+
+#: template-parts/content-none.php
+msgid "Content not found."
+msgstr ""
+
+#: searchform.php
+msgid "Search:"
+msgstr ""
+
+#: searchform.php
+msgid "Search..."
+msgstr ""
+
+#: searchform.php
+msgid "Search"
+msgstr ""

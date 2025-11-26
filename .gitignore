@@ -1,0 +1,19 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+
+# Node modules (if using build tools)
+node_modules/
+
+# Build artifacts
+*.log
+
+# Demo files (not needed in theme)
+demo/

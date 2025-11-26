@@ -1,19 +1,19 @@
 /*
 Theme Name: BLOGthemeWP
-Theme URI: https://github.com/blogthemewp
-Author: BLOGthemeWP Team
-Author URI: https://blogthemewp.dev
-Description: 極限まで簡素化されたブログ専用テーマ。note.comのように「書くこと。読んでもらうこと。」を追求。メインカラー、アイコン、ヘッダ画像のみカスタマイズ可能。
-Version: 1.0.0
+Theme URI: https://github.com/bobeec/BLOGthemeWP
+Author: bobeec
+Author URI: https://github.com/bobeec
+Description: A minimal blog theme focused on writing and reading. Inspired by note.com, this theme offers a clean, distraction-free experience. Customizable elements are limited to primary color, site icon, and header image only.
+Version: 0.1.0
 Tested up to: 6.4
 Requires at least: 6.0
 Requires PHP: 8.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: blogthemewp
-Tags: blog, minimal, simple, one-column, custom-colors, custom-logo, editor-style, block-styles
+Tags: blog, one-column, custom-colors, custom-logo, custom-header, editor-style, featured-images, block-styles, translation-ready, accessibility-ready
 
-BLOGthemeWP - 私だけのブログサービス
+BLOGthemeWP - A minimal blog theme. Write. Read. That's it.
 */
 
 /* ============================================
