@@ -5,14 +5,14 @@
  * 「書くこと。読んでもらうこと。」
  *
  * @package BLOGthemeWP
- * @version 0.4.0
+ * @version 0.4.1
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
-define( 'BLOGTHEMEWP_VERSION', '0.4.0' );
+define( 'BLOGTHEMEWP_VERSION', '0.4.1' );
 define( 'BLOGTHEMEWP_DIR', get_template_directory() );
 define( 'BLOGTHEMEWP_URI', get_template_directory_uri() );
 
