@@ -1,6 +1,6 @@
 <?php
 /**
- * Search Results Template
+ * Search Results
  *
  * @package BLOGthemeWP
  */
@@ -8,34 +8,38 @@
 get_header();
 ?>
 
-<header class="page-header">
+<header class="page-header" style="text-align: center; margin-bottom: var(--spacing-lg);">
     <h1 class="page-title">
-        <?php
-        printf(
-            /* translators: %s: search query */
-            esc_html__( '「%s」の検索結果', 'blogthemewp' ),
-            '<span>' . get_search_query() . '</span>'
-        );
-        ?>
+        <?php printf( esc_html__( '「%s」の検索結果', 'blogthemewp' ), get_search_query() ); ?>
     </h1>
 </header>
 
 <?php if ( have_posts() ) : ?>
 
-    <div class="post-list">
-        <?php while ( have_posts() ) : the_post(); ?>
-            <?php get_template_part( 'template-parts/content', 'card' ); ?>
-        <?php endwhile; ?>
-    </div>
+<div class="post-list">
+    <?php while ( have_posts() ) : the_post(); ?>
+    
+    <article <?php post_class( 'post-card' ); ?>>
+        <h2 class="post-card-title">
+            <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+        </h2>
+        <div class="post-card-meta">
+            <?php blogthemewp_posted_on(); ?>
+        </div>
+        <p class="post-card-excerpt"><?php echo wp_trim_words( get_the_excerpt(), 50 ); ?></p>
+    </article>
+    
+    <?php endwhile; ?>
+</div>
 
-    <?php blogthemewp_pagination(); ?>
+<?php blogthemewp_pagination(); ?>
 
 <?php else : ?>
 
-    <div class="no-results">
-        <p><?php esc_html_e( '検索結果が見つかりませんでした。別のキーワードでお試しください。', 'blogthemewp' ); ?></p>
-        <?php get_search_form(); ?>
-    </div>
+<div class="no-results">
+    <p><?php esc_html_e( '検索結果がありません。', 'blogthemewp' ); ?></p>
+    <?php get_search_form(); ?>
+</div>
 
 <?php endif; ?>
 

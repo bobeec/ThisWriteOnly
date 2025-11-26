@@ -1,6 +1,6 @@
 <?php
 /**
- * 404 Error Template
+ * 404
  *
  * @package BLOGthemeWP
  */
@@ -8,20 +8,11 @@
 get_header();
 ?>
 
-<section class="error-404 not-found">
-    <header class="page-header">
-        <h1 class="page-title">404</h1>
-    </header>
-
-    <div class="page-content">
-        <p><?php esc_html_e( 'お探しのページは見つかりませんでした。', 'blogthemewp' ); ?></p>
-        <p>
-            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="back-home">
-                <?php esc_html_e( 'ホームに戻る', 'blogthemewp' ); ?>
-            </a>
-        </p>
-    </div>
-</section>
+<div class="error-404">
+    <h1 class="page-title">404</h1>
+    <p><?php esc_html_e( 'ページが見つかりません。', 'blogthemewp' ); ?></p>
+    <p><a href="<?php echo esc_url( home_url() ); ?>"><?php esc_html_e( 'ホームに戻る', 'blogthemewp' ); ?></a></p>
+</div>
 
 <?php
 get_footer();
