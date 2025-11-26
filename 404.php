@@ -2,18 +2,18 @@
 /**
  * 404
  *
- * @package BLOGthemeWP
+ * @package ThisWriteOnly
  */
 
 get_header();
 
-blogthemewp_breadcrumb();
+thiswriteonly_breadcrumb();
 ?>
 
 <div class="error-404">
     <h1 class="page-title">404</h1>
-    <p><?php esc_html_e( 'ページが見つかりません。', 'blogthemewp' ); ?></p>
-    <p><a href="<?php echo esc_url( home_url() ); ?>"><?php esc_html_e( 'ホームに戻る', 'blogthemewp' ); ?></a></p>
+    <p><?php esc_html_e( 'Page not found.', 'thiswriteonly' ); ?></p>
+    <p><a href="<?php echo esc_url( home_url() ); ?>"><?php esc_html_e( 'Back to Home', 'thiswriteonly' ); ?></a></p>
 </div>
 
 <?php

@@ -2,12 +2,12 @@
 /**
  * Single Post
  *
- * @package BLOGthemeWP
+ * @package ThisWriteOnly
  */
 
 get_header();
 
-blogthemewp_breadcrumb();
+thiswriteonly_breadcrumb();
 
 while ( have_posts() ) : the_post();
 ?>
@@ -17,10 +17,10 @@ while ( have_posts() ) : the_post();
     <header class="entry-header">
         <h1 class="entry-title"><?php the_title(); ?></h1>
         <div class="entry-meta">
-            <?php blogthemewp_posted_on(); ?>
-            <?php blogthemewp_modified_date(); ?>
-            <?php blogthemewp_posted_by(); ?>
-            <?php blogthemewp_reading_time_display(); ?>
+            <?php thiswriteonly_posted_on(); ?>
+            <?php thiswriteonly_modified_date(); ?>
+            <?php thiswriteonly_posted_by(); ?>
+            <?php thiswriteonly_reading_time_display(); ?>
         </div>
     </header>
     
@@ -35,7 +35,7 @@ while ( have_posts() ) : the_post();
         
         <?php
         wp_link_pages( array(
-            'before'      => '<div class="page-links">' . esc_html__( 'ページ:', 'blogthemewp' ),
+            'before'      => '<div class="page-links">' . esc_html__( 'Pages:', 'thiswriteonly' ),
             'after'       => '</div>',
             'link_before' => '<span class="page-link">',
             'link_after'  => '</span>',
@@ -44,17 +44,17 @@ while ( have_posts() ) : the_post();
     </div>
     
     <footer class="entry-footer">
-        <?php blogthemewp_entry_footer(); ?>
+        <?php thiswriteonly_entry_footer(); ?>
     </footer>
     
 </article>
 
-<?php blogthemewp_author_box(); ?>
+<?php thiswriteonly_author_box(); ?>
 
-<?php blogthemewp_post_navigation(); ?>
+<?php thiswriteonly_post_navigation(); ?>
 
 <?php
-if ( blogthemewp_show( 'show_comments' ) && ( comments_open() || get_comments_number() ) ) :
+if ( thiswriteonly_show( 'show_comments' ) && ( comments_open() || get_comments_number() ) ) :
     comments_template();
 endif;
 

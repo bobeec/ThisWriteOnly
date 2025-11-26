@@ -1,9 +1,9 @@
-=== BLOGthemeWP ===
+=== ThisWriteOnly ===
 Contributors: bobeec
 Requires at least: 6.0
-Tested up to: 6.4
+Tested up to: 6.7
 Requires PHP: 8.0
-Stable tag: 0.4.2
+Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -11,12 +11,12 @@ A minimal WordPress blog theme focused on writing and reading.
 
 == Description ==
 
-BLOGthemeWP is an extremely simple WordPress blog theme that focuses on "writing and reading."
+ThisWriteOnly is an extremely simple WordPress blog theme that focuses on "writing and reading."
 
 = Features =
 
 * **Minimal Customization** - Display toggle options only, no complex settings
-* **Simplified Editor** - Only essential blocks for distraction-free writing
+* **Optional Simple Editor Mode** - Enable to limit blocks to essential ones only (opt-in, disabled by default)
 * **SEO Ready** - Built-in meta descriptions, Open Graph, Twitter Cards, JSON-LD, canonical URLs, and breadcrumbs with structured data
 * **Responsive** - Mobile-first design for optimal reading on any device
 * **Accessibility Ready** - Skip links, keyboard navigation, proper heading structure, and link underlines
@@ -32,7 +32,7 @@ BLOGthemeWP is an extremely simple WordPress blog theme that focuses on "writing
 
 = Display Options =
 
-Navigate to Appearance > BLOGthemeWP to configure what to show:
+Navigate to Appearance > Customize > ThisWriteOnly Settings to configure what to show:
 
 * Header, Site Icon, Site Title, Navigation
 * Post Date, Modified Date, Author, Reading Time
@@ -40,6 +40,10 @@ Navigate to Appearance > BLOGthemeWP to configure what to show:
 * Post Navigation, Comments
 * Footer Archives (Yearly, Monthly, Categories)
 * Breadcrumb
+
+= Editor Options =
+
+* Simple Editor Mode - When enabled, limits available blocks to essentials (paragraph, heading, list, quote, image, etc.)
 
 == Installation ==
 
@@ -51,17 +55,27 @@ Navigate to Appearance > BLOGthemeWP to configure what to show:
 
 = Why are there so few customization options? =
 
-By design! BLOGthemeWP focuses on content, not design decisions. The typography, spacing, and layout are optimized for the best reading experience.
+By design! ThisWriteOnly focuses on content, not design decisions. The typography, spacing, and layout are optimized for the best reading experience.
 
-= Can I add more blocks to the editor? =
+= Can I limit available blocks in the editor? =
 
-The theme intentionally limits available blocks to maintain simplicity. If you need more blocks, you can modify the `blogthemewp_allowed_block_types` function in functions.php.
+Yes! Go to Appearance > Customize > ThisWriteOnly Settings > Editor Options and enable "Simple Editor Mode". This limits available blocks to essential ones only (paragraph, heading, list, quote, image, etc.). This feature is disabled by default so all blocks are available.
 
 = Does this theme need SEO plugins? =
 
-No. BLOGthemeWP has built-in SEO features including meta descriptions, OGP, Twitter Cards, JSON-LD structured data, canonical URLs, and breadcrumbs. However, for sitemaps, we recommend using the XML Sitemaps plugin.
+No. ThisWriteOnly has built-in SEO features including meta descriptions, OGP, Twitter Cards, JSON-LD structured data, canonical URLs, and breadcrumbs. However, for sitemaps, we recommend using the XML Sitemaps plugin.
 
 == Changelog ==
+
+= 1.0.0 =
+* Major release for WordPress.org submission
+* Renamed theme from BLOGthemeWP to ThisWriteOnly (WordPress trademark compliance)
+* Moved all settings to Customizer (WordPress.org recommended approach)
+* Made block restriction opt-in via "Simple Editor Mode" (default: OFF)
+* Removed dashboard widget
+* Updated all function prefixes to thiswriteonly_
+* Added Editor Options section in Customizer
+* Tested with WordPress 6.7
 
 = 0.4.2 =
 * Improved keyboard focus styles for accessibility
@@ -76,11 +90,9 @@ No. BLOGthemeWP has built-in SEO features including meta descriptions, OGP, Twit
 * Added breadcrumb navigation with Schema.org structured data
 * Added canonical URL output
 * Added modified date display option
-* Reorganized dashboard widget with plugin suggestions
 
 = 0.3.0 =
 * Added footer archive display options (yearly, monthly, category)
-* Updated dashboard widget with detailed plugin information
 
 = 0.2.3 =
 * Fixed comment display error
@@ -111,8 +123,8 @@ The screenshot image was created by the theme author and is released under GPLv2
 
 == Copyright ==
 
-BLOGthemeWP WordPress Theme, (C) 2024 bobeec
-BLOGthemeWP is distributed under the terms of the GNU GPL v2 or later.
+ThisWriteOnly WordPress Theme, (C) 2024 bobeec
+ThisWriteOnly is distributed under the terms of the GNU GPL v2 or later.
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by

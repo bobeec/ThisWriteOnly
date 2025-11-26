@@ -2,26 +2,26 @@
 /**
  * Footer
  *
- * @package BLOGthemeWP
+ * @package ThisWriteOnly
  */
 ?>
 
 </main>
 
-<?php if ( blogthemewp_show( 'show_footer' ) ) : ?>
+<?php if ( thiswriteonly_show( 'show_footer' ) ) : ?>
 <footer class="site-footer">
     
     <?php 
-    $show_yearly = blogthemewp_show( 'show_archive_yearly' );
-    $show_monthly = blogthemewp_show( 'show_archive_monthly' );
-    $show_category = blogthemewp_show( 'show_archive_category' );
+    $show_yearly = thiswriteonly_show( 'show_archive_yearly' );
+    $show_monthly = thiswriteonly_show( 'show_archive_monthly' );
+    $show_category = thiswriteonly_show( 'show_archive_category' );
     
     if ( $show_yearly || $show_monthly || $show_category ) : 
     ?>
     <div class="footer-archives">
         <?php if ( $show_yearly ) : ?>
         <div class="footer-archive-section">
-            <h3 class="footer-archive-title"><?php esc_html_e( '年別アーカイブ', 'blogthemewp' ); ?></h3>
+            <h3 class="footer-archive-title"><?php esc_html_e( 'Archives by Year', 'thiswriteonly' ); ?></h3>
             <ul class="footer-archive-list">
                 <?php wp_get_archives( array( 'type' => 'yearly', 'limit' => 5 ) ); ?>
             </ul>
@@ -30,7 +30,7 @@
         
         <?php if ( $show_monthly ) : ?>
         <div class="footer-archive-section">
-            <h3 class="footer-archive-title"><?php esc_html_e( '月別アーカイブ', 'blogthemewp' ); ?></h3>
+            <h3 class="footer-archive-title"><?php esc_html_e( 'Archives by Month', 'thiswriteonly' ); ?></h3>
             <ul class="footer-archive-list">
                 <?php wp_get_archives( array( 'type' => 'monthly', 'limit' => 12 ) ); ?>
             </ul>
@@ -39,7 +39,7 @@
         
         <?php if ( $show_category ) : ?>
         <div class="footer-archive-section">
-            <h3 class="footer-archive-title"><?php esc_html_e( 'カテゴリー', 'blogthemewp' ); ?></h3>
+            <h3 class="footer-archive-title"><?php esc_html_e( 'Categories', 'thiswriteonly' ); ?></h3>
             <ul class="footer-archive-list">
                 <?php wp_list_categories( array( 'title_li' => '', 'show_count' => true ) ); ?>
             </ul>

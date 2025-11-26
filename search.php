@@ -2,17 +2,17 @@
 /**
  * Search Results
  *
- * @package BLOGthemeWP
+ * @package ThisWriteOnly
  */
 
 get_header();
 
-blogthemewp_breadcrumb();
+thiswriteonly_breadcrumb();
 ?>
 
 <header class="page-header" style="text-align: center; margin-bottom: var(--spacing-lg);">
     <h1 class="page-title">
-        <?php printf( esc_html__( '「%s」の検索結果', 'blogthemewp' ), get_search_query() ); ?>
+        <?php printf( esc_html__( 'Search results for "%s"', 'thiswriteonly' ), get_search_query() ); ?>
     </h1>
 </header>
 
@@ -26,7 +26,7 @@ blogthemewp_breadcrumb();
             <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
         </h2>
         <div class="post-card-meta">
-            <?php blogthemewp_posted_on(); ?>
+            <?php thiswriteonly_posted_on(); ?>
         </div>
         <p class="post-card-excerpt"><?php echo wp_trim_words( get_the_excerpt(), 50 ); ?></p>
     </article>
@@ -34,12 +34,12 @@ blogthemewp_breadcrumb();
     <?php endwhile; ?>
 </div>
 
-<?php blogthemewp_pagination(); ?>
+<?php thiswriteonly_pagination(); ?>
 
 <?php else : ?>
 
 <div class="no-results">
-    <p><?php esc_html_e( '検索結果がありません。', 'blogthemewp' ); ?></p>
+    <p><?php esc_html_e( 'No results found.', 'thiswriteonly' ); ?></p>
     <?php get_search_form(); ?>
 </div>
 

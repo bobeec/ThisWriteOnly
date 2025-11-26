@@ -1,0 +1,236 @@
+# Copyright (C) 2024 bobeec
+# This file is distributed under the GNU GPL v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: ThisWriteOnly 1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/bobeec/ThisWriteOnly/issues\n"
+"POT-Creation-Date: 2024-11-26 00:00:00+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: none\n"
+"X-Domain: thiswriteonly\n"
+
+#: functions.php
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php
+msgid "ThisWriteOnly Settings"
+msgstr ""
+
+#: functions.php
+msgid "Display Options"
+msgstr ""
+
+#: functions.php
+msgid "Show Header"
+msgstr ""
+
+#: functions.php
+msgid "Show Site Icon"
+msgstr ""
+
+#: functions.php
+msgid "Show Site Title"
+msgstr ""
+
+#: functions.php
+msgid "Show Navigation"
+msgstr ""
+
+#: functions.php
+msgid "Show Post Date"
+msgstr ""
+
+#: functions.php
+msgid "Show Author"
+msgstr ""
+
+#: functions.php
+msgid "Show Reading Time"
+msgstr ""
+
+#: functions.php
+msgid "Show Categories"
+msgstr ""
+
+#: functions.php
+msgid "Show Tags"
+msgstr ""
+
+#: functions.php
+msgid "Show Author Box"
+msgstr ""
+
+#: functions.php
+msgid "Show Post Navigation"
+msgstr ""
+
+#: functions.php
+msgid "Show Comments"
+msgstr ""
+
+#: functions.php
+msgid "Show Footer"
+msgstr ""
+
+#: functions.php
+msgid "Footer: Yearly Archives"
+msgstr ""
+
+#: functions.php
+msgid "Footer: Monthly Archives"
+msgstr ""
+
+#: functions.php
+msgid "Footer: Categories"
+msgstr ""
+
+#: functions.php
+msgid "Show Breadcrumb"
+msgstr ""
+
+#: functions.php
+msgid "Show Modified Date"
+msgstr ""
+
+#: functions.php
+msgid "Editor Options"
+msgstr ""
+
+#: functions.php
+msgid "Simple Editor Mode"
+msgstr ""
+
+#: functions.php
+msgid "Limit available blocks to essential ones only (paragraph, heading, list, quote, image, etc.)"
+msgstr ""
+
+#: header.php
+msgid "Skip to content"
+msgstr ""
+
+#: inc/template-tags.php
+#, php-format
+msgid "%s min read"
+msgstr ""
+
+#: inc/template-tags.php
+msgid "Previous"
+msgstr ""
+
+#: inc/template-tags.php
+msgid "Next"
+msgstr ""
+
+#: inc/template-tags.php
+msgid "Home"
+msgstr ""
+
+#: inc/template-tags.php
+#, php-format
+msgid "Search results for \"%s\""
+msgstr ""
+
+#: inc/template-tags.php
+msgid "Page not found"
+msgstr ""
+
+#: inc/template-tags.php
+msgid "Breadcrumb"
+msgstr ""
+
+#: inc/template-tags.php
+#, php-format
+msgid "Updated: %s"
+msgstr ""
+
+#: single.php page.php
+msgid "Pages:"
+msgstr ""
+
+#: comments.php
+#, php-format
+msgid "%s Comment"
+msgid_plural "%s Comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php
+msgid "Older Comments"
+msgstr ""
+
+#: comments.php
+msgid "Newer Comments"
+msgstr ""
+
+#: comments.php
+msgid "Comments are closed."
+msgstr ""
+
+#: comments.php
+msgid "Leave a Comment"
+msgstr ""
+
+#: comments.php
+#, php-format
+msgid "Reply to %s"
+msgstr ""
+
+#: comments.php
+msgid "Cancel"
+msgstr ""
+
+#: comments.php
+msgid "Submit Comment"
+msgstr ""
+
+#: comments.php
+msgid "Comment"
+msgstr ""
+
+#: footer.php
+msgid "Archives by Year"
+msgstr ""
+
+#: footer.php
+msgid "Archives by Month"
+msgstr ""
+
+#: footer.php
+msgid "Categories"
+msgstr ""
+
+#: 404.php
+msgid "Page not found."
+msgstr ""
+
+#: 404.php
+msgid "Back to Home"
+msgstr ""
+
+#: archive.php index.php
+msgid "No posts found."
+msgstr ""
+
+#: search.php
+msgid "No results found."
+msgstr ""
+
+#: searchform.php
+msgid "Search:"
+msgstr ""
+
+#: searchform.php
+msgid "Search..."
+msgstr ""
+
+#: searchform.php
+msgid "Search"
+msgstr ""

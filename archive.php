@@ -2,12 +2,12 @@
 /**
  * Archive
  *
- * @package BLOGthemeWP
+ * @package ThisWriteOnly
  */
 
 get_header();
 
-blogthemewp_breadcrumb();
+thiswriteonly_breadcrumb();
 ?>
 
 <header class="page-header" style="margin-bottom: var(--spacing-lg);">
@@ -25,8 +25,8 @@ blogthemewp_breadcrumb();
             <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
         </h2>
         <div class="post-card-meta">
-            <?php blogthemewp_posted_on(); ?>
-            <?php blogthemewp_reading_time_display(); ?>
+            <?php thiswriteonly_posted_on(); ?>
+            <?php thiswriteonly_reading_time_display(); ?>
         </div>
         <p class="post-card-excerpt"><?php echo wp_trim_words( get_the_excerpt(), 50 ); ?></p>
     </article>
@@ -34,12 +34,12 @@ blogthemewp_breadcrumb();
     <?php endwhile; ?>
 </div>
 
-<?php blogthemewp_pagination(); ?>
+<?php thiswriteonly_pagination(); ?>
 
 <?php else : ?>
 
 <div class="no-results">
-    <p><?php esc_html_e( '記事がありません。', 'blogthemewp' ); ?></p>
+    <p><?php esc_html_e( 'No posts found.', 'thiswriteonly' ); ?></p>
 </div>
 
 <?php endif; ?>

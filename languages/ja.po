@@ -1,0 +1,236 @@
+# Japanese translation for ThisWriteOnly
+# Copyright (C) 2024 bobeec
+# This file is distributed under the GNU GPL v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: ThisWriteOnly 1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/bobeec/ThisWriteOnly/issues\n"
+"POT-Creation-Date: 2024-11-26 00:00:00+00:00\n"
+"PO-Revision-Date: 2024-11-26 00:00:00+00:00\n"
+"Last-Translator: bobeec\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: none\n"
+"X-Domain: thiswriteonly\n"
+
+#: functions.php
+msgid "Primary Menu"
+msgstr "メインメニュー"
+
+#: functions.php
+msgid "ThisWriteOnly Settings"
+msgstr "ThisWriteOnly 設定"
+
+#: functions.php
+msgid "Display Options"
+msgstr "表示オプション"
+
+#: functions.php
+msgid "Show Header"
+msgstr "ヘッダーを表示"
+
+#: functions.php
+msgid "Show Site Icon"
+msgstr "サイトアイコンを表示"
+
+#: functions.php
+msgid "Show Site Title"
+msgstr "サイトタイトルを表示"
+
+#: functions.php
+msgid "Show Navigation"
+msgstr "ナビゲーションを表示"
+
+#: functions.php
+msgid "Show Post Date"
+msgstr "投稿日を表示"
+
+#: functions.php
+msgid "Show Author"
+msgstr "著者を表示"
+
+#: functions.php
+msgid "Show Reading Time"
+msgstr "読了時間を表示"
+
+#: functions.php
+msgid "Show Categories"
+msgstr "カテゴリーを表示"
+
+#: functions.php
+msgid "Show Tags"
+msgstr "タグを表示"
+
+#: functions.php
+msgid "Show Author Box"
+msgstr "著者ボックスを表示"
+
+#: functions.php
+msgid "Show Post Navigation"
+msgstr "前後の記事リンクを表示"
+
+#: functions.php
+msgid "Show Comments"
+msgstr "コメントを表示"
+
+#: functions.php
+msgid "Show Footer"
+msgstr "フッターを表示"
+
+#: functions.php
+msgid "Footer: Yearly Archives"
+msgstr "フッター：年別アーカイブ"
+
+#: functions.php
+msgid "Footer: Monthly Archives"
+msgstr "フッター：月別アーカイブ"
+
+#: functions.php
+msgid "Footer: Categories"
+msgstr "フッター：カテゴリー"
+
+#: functions.php
+msgid "Show Breadcrumb"
+msgstr "パンくずリストを表示"
+
+#: functions.php
+msgid "Show Modified Date"
+msgstr "更新日を表示"
+
+#: functions.php
+msgid "Editor Options"
+msgstr "エディターオプション"
+
+#: functions.php
+msgid "Simple Editor Mode"
+msgstr "シンプルエディターモード"
+
+#: functions.php
+msgid "Limit available blocks to essential ones only (paragraph, heading, list, quote, image, etc.)"
+msgstr "使用可能なブロックを必要最小限に制限します（段落、見出し、リスト、引用、画像など）"
+
+#: header.php
+msgid "Skip to content"
+msgstr "コンテンツにスキップ"
+
+#: inc/template-tags.php
+#, php-format
+msgid "%s min read"
+msgstr "%s分で読める"
+
+#: inc/template-tags.php
+msgid "Previous"
+msgstr "前の記事"
+
+#: inc/template-tags.php
+msgid "Next"
+msgstr "次の記事"
+
+#: inc/template-tags.php
+msgid "Home"
+msgstr "ホーム"
+
+#: inc/template-tags.php
+#, php-format
+msgid "Search results for \"%s\""
+msgstr "「%s」の検索結果"
+
+#: inc/template-tags.php
+msgid "Page not found"
+msgstr "ページが見つかりません"
+
+#: inc/template-tags.php
+msgid "Breadcrumb"
+msgstr "パンくずリスト"
+
+#: inc/template-tags.php
+#, php-format
+msgid "Updated: %s"
+msgstr "更新：%s"
+
+#: single.php page.php
+msgid "Pages:"
+msgstr "ページ:"
+
+#: comments.php
+#, php-format
+msgid "%s Comment"
+msgid_plural "%s Comments"
+msgstr[0] "%s件のコメント"
+
+#: comments.php
+msgid "Older Comments"
+msgstr "古いコメント"
+
+#: comments.php
+msgid "Newer Comments"
+msgstr "新しいコメント"
+
+#: comments.php
+msgid "Comments are closed."
+msgstr "コメントは受け付けていません。"
+
+#: comments.php
+msgid "Leave a Comment"
+msgstr "コメントを残す"
+
+#: comments.php
+#, php-format
+msgid "Reply to %s"
+msgstr "%sへの返信"
+
+#: comments.php
+msgid "Cancel"
+msgstr "キャンセル"
+
+#: comments.php
+msgid "Submit Comment"
+msgstr "コメントを送信"
+
+#: comments.php
+msgid "Comment"
+msgstr "コメント"
+
+#: footer.php
+msgid "Archives by Year"
+msgstr "年別アーカイブ"
+
+#: footer.php
+msgid "Archives by Month"
+msgstr "月別アーカイブ"
+
+#: footer.php
+msgid "Categories"
+msgstr "カテゴリー"
+
+#: 404.php
+msgid "Page not found."
+msgstr "ページが見つかりません。"
+
+#: 404.php
+msgid "Back to Home"
+msgstr "ホームに戻る"
+
+#: archive.php index.php
+msgid "No posts found."
+msgstr "記事がありません。"
+
+#: search.php
+msgid "No results found."
+msgstr "検索結果がありません。"
+
+#: searchform.php
+msgid "Search:"
+msgstr "検索:"
+
+#: searchform.php
+msgid "Search..."
+msgstr "検索..."
+
+#: searchform.php
+msgid "Search"
+msgstr "検索"
