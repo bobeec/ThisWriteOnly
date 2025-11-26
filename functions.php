@@ -85,7 +85,15 @@ function blogthemewp_get_display_options() {
 function blogthemewp_show( $option ) {
     $options = blogthemewp_get_display_options();
     $default = isset( $options[ $option ]['default'] ) ? $options[ $option ]['default'] : true;
-    return get_theme_mod( 'blogthemewp_' . $option, $default );
+    $value = get_theme_mod( 'blogthemewp_' . $option, 'not_set' );
+    
+    // 値が設定されていなければデフォルトを返す
+    if ( $value === 'not_set' ) {
+        return $default;
+    }
+    
+    // 1ならtrue、0ならfalse
+    return ( $value == 1 );
 }
 
 /*----------------------------------------------------------
@@ -106,7 +114,8 @@ function blogthemewp_settings_page() {
     if ( isset( $_POST['blogthemewp_save'] ) && check_admin_referer( 'blogthemewp_settings' ) ) {
         $options = blogthemewp_get_display_options();
         foreach ( $options as $key => $opt ) {
-            $value = isset( $_POST[ 'blogthemewp_' . $key ] ) ? true : false;
+            // チェックボックスがオンなら1、オフなら0として保存
+            $value = isset( $_POST[ 'blogthemewp_' . $key ] ) ? 1 : 0;
             set_theme_mod( 'blogthemewp_' . $key, $value );
         }
         echo '<div class="notice notice-success"><p>設定を保存しました。</p></div>';
@@ -126,10 +135,10 @@ function blogthemewp_settings_page() {
                 <p style="color: #666; font-size: 13px; margin-bottom: 20px;">表示する項目にチェックを入れてください。</p>
                 
                 <?php foreach ( $options as $key => $opt ) : 
-                    $checked = blogthemewp_show( $key ) ? 'checked' : '';
+                    $is_checked = blogthemewp_show( $key );
                 ?>
                 <label style="display: flex; align-items: center; padding: 10px 0; border-bottom: 1px solid #f0f0f0; cursor: pointer;">
-                    <input type="checkbox" name="blogthemewp_<?php echo esc_attr( $key ); ?>" <?php echo $checked; ?> style="margin-right: 12px;">
+                    <input type="checkbox" name="blogthemewp_<?php echo esc_attr( $key ); ?>" value="1" <?php checked( $is_checked, true ); ?> style="margin-right: 12px;">
                     <span style="font-size: 14px;"><?php echo esc_html( $opt['label'] ); ?></span>
                 </label>
                 <?php endforeach; ?>
