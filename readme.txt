@@ -3,7 +3,7 @@ Contributors: bobeec
 Requires at least: 6.0
 Tested up to: 6.7
 Requires PHP: 8.0
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -66,6 +66,9 @@ Yes! Go to Appearance > Customize > ThisWriteOnly Settings > Editor Options and 
 No. ThisWriteOnly has built-in SEO features including meta descriptions, OGP, Twitter Cards, JSON-LD structured data, canonical URLs, and breadcrumbs. However, for sitemaps, we recommend using the XML Sitemaps plugin.
 
 == Changelog ==
+
+= 1.0.1 =
+* Re-submission to WordPress.org
 
 = 1.0.0 =
 * Major release for WordPress.org submission

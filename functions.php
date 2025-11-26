@@ -12,7 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
-define( 'THISWRITEONLY_VERSION', '1.0.0' );
+define( 'THISWRITEONLY_VERSION', '1.0.1' );
 define( 'THISWRITEONLY_DIR', get_template_directory() );
 define( 'THISWRITEONLY_URI', get_template_directory_uri() );
 
