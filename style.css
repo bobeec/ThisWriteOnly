@@ -4,7 +4,7 @@ Theme URI: https://github.com/bobeec/BLOGthemeWP
 Author: bobeec
 Author URI: https://github.com/bobeec
 Description: A minimal blog theme focused on writing and reading. Customization is limited to display toggles only. Clean, simple, and distraction-free.
-Version: 0.2.3
+Version: 0.3.0
 Tested up to: 6.4
 Requires at least: 6.0
 Requires PHP: 8.0
@@ -551,8 +551,7 @@ a.page-numbers:hover {
    ========================================================================== */
 .site-footer {
     margin-top: auto;
-    padding: var(--spacing) var(--spacing);
-    text-align: center;
+    padding: var(--spacing-lg) var(--spacing) var(--spacing);
     font-size: var(--font-size-sm);
     color: var(--color-text-muted);
     background: var(--color-surface);
@@ -561,6 +560,61 @@ a.page-numbers:hover {
 
 .site-footer a {
     color: var(--color-text-light);
+}
+
+/* Footer Archives */
+.footer-archives {
+    max-width: var(--site-width);
+    margin: 0 auto var(--spacing-lg);
+    padding: 0 var(--spacing);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--spacing-lg);
+    text-align: left;
+}
+
+.footer-archive-section {
+    min-width: 0;
+}
+
+.footer-archive-title {
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    color: var(--color-text);
+    margin: 0 0 var(--spacing-sm);
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.footer-archive-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-archive-list li {
+    padding: 6px 0;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.footer-archive-list li:last-child {
+    border-bottom: none;
+}
+
+.footer-archive-list a {
+    color: var(--color-text-light);
+    font-size: var(--font-size-sm);
+}
+
+.footer-archive-list a:hover {
+    color: var(--color-accent);
+}
+
+.footer-copyright {
+    text-align: center;
+    margin: 0;
+    padding-top: var(--spacing);
+    border-top: 1px solid var(--color-border);
 }
 
 /* ==========================================================================

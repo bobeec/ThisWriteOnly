@@ -5,14 +5,14 @@
  * 「書くこと。読んでもらうこと。」
  *
  * @package BLOGthemeWP
- * @version 0.2.3
+ * @version 0.3.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
-define( 'BLOGTHEMEWP_VERSION', '0.2.3' );
+define( 'BLOGTHEMEWP_VERSION', '0.3.0' );
 define( 'BLOGTHEMEWP_DIR', get_template_directory() );
 define( 'BLOGTHEMEWP_URI', get_template_directory_uri() );
 
@@ -89,6 +89,9 @@ function blogthemewp_get_display_options() {
         'show_post_nav'     => array( 'label' => '前後の記事リンク', 'default' => true ),
         'show_comments'     => array( 'label' => 'コメント', 'default' => true ),
         'show_footer'       => array( 'label' => 'フッター', 'default' => true ),
+        'show_archive_yearly'    => array( 'label' => 'フッター：年別アーカイブ', 'default' => false ),
+        'show_archive_monthly'   => array( 'label' => 'フッター：月別アーカイブ', 'default' => false ),
+        'show_archive_category'  => array( 'label' => 'フッター：カテゴリー', 'default' => false ),
     );
 }
 
@@ -193,14 +196,22 @@ function blogthemewp_dashboard_widget_content() {
         
         <h4 style="font-size: 13px; font-weight: 600; margin: 16px 0 8px; color: #1d2327;">推奨プラグイン</h4>
         <ul style="font-size: 13px; color: #50575e; line-height: 1.8; margin: 0; padding-left: 20px;">
-            <li><strong>WP Multibyte Patch</strong> - 日本語環境の最適化</li>
-            <li><strong>XML Sitemaps</strong> - サイトマップ自動生成</li>
-            <li><strong>UpdraftPlus</strong> - バックアップ</li>
-            <li><strong>Akismet</strong> - スパム対策</li>
+            <li><strong>WP Multibyte Patch</strong> - 日本語の文字数カウント・検索・トラックバックを正確に</li>
+            <li><strong>XML Sitemaps</strong> - 検索エンジン向けサイトマップを自動生成・送信</li>
+            <li><strong>UpdraftPlus</strong> - 記事・設定・画像を自動バックアップ、復元も簡単</li>
+            <li><strong>Akismet</strong> - コメントスパムを自動判定・ブロック</li>
         </ul>
         
-        <p style="font-size: 12px; color: #999; margin-top: 16px; padding-top: 12px; border-top: 1px solid #e0e0e0;">
-            ヒント：このテーマはSEO対応済み（メタタグ・OGP・構造化データ自動出力）。SEOプラグインは不要です。
+        <div style="font-size: 12px; color: #666; margin-top: 16px; padding: 12px; background: #f8f9fa; border-radius: 4px;">
+            <strong style="color: #1d2327;">テーマ内蔵機能</strong>
+            <ul style="margin: 8px 0 0; padding-left: 16px;">
+                <li>SEO対応済み（メタタグ・OGP・構造化データ自動出力）→ SEOプラグイン不要</li>
+                <li>フッターアーカイブ表示 → <a href="<?php echo admin_url( 'themes.php?page=blogthemewp-settings' ); ?>">設定で有効化</a></li>
+            </ul>
+        </div>
+        
+        <p style="font-size: 12px; color: #999; margin-top: 12px;">
+            ※ 上記プラグインはWordPress公式ディレクトリから無料でインストールできます。
         </p>
     </div>
     
