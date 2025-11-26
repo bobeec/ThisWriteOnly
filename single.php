@@ -29,6 +29,15 @@ while ( have_posts() ) : the_post();
     
     <div class="entry-content">
         <?php the_content(); ?>
+        
+        <?php
+        wp_link_pages( array(
+            'before'      => '<div class="page-links">' . esc_html__( 'ページ:', 'blogthemewp' ),
+            'after'       => '</div>',
+            'link_before' => '<span class="page-link">',
+            'link_after'  => '</span>',
+        ) );
+        ?>
     </div>
     
     <footer class="entry-footer">

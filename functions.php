@@ -5,14 +5,14 @@
  * 「書くこと。読んでもらうこと。」
  *
  * @package BLOGthemeWP
- * @version 0.2.0
+ * @version 0.2.2
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
-define( 'BLOGTHEMEWP_VERSION', '0.2.1' );
+define( 'BLOGTHEMEWP_VERSION', '0.2.2' );
 define( 'BLOGTHEMEWP_DIR', get_template_directory() );
 define( 'BLOGTHEMEWP_URI', get_template_directory_uri() );
 
@@ -38,6 +38,16 @@ function blogthemewp_setup() {
     add_theme_support( 'disable-custom-gradients' );
     add_theme_support( 'disable-custom-font-sizes' );
     remove_theme_support( 'core-block-patterns' );
+    
+    // WordPress.org推奨サポート
+    add_theme_support( 'wp-block-styles' );
+    add_theme_support( 'align-wide' );
+    add_theme_support( 'custom-logo', array(
+        'height'      => 80,
+        'width'       => 200,
+        'flex-height' => true,
+        'flex-width'  => true,
+    ) );
 }
 add_action( 'after_setup_theme', 'blogthemewp_setup' );
 
@@ -315,18 +325,8 @@ function blogthemewp_seo_head() {
 }
 add_action( 'wp_head', 'blogthemewp_seo_head', 1 );
 
-/*----------------------------------------------------------
- * 不要なhead要素を削除
- *----------------------------------------------------------*/
-function blogthemewp_cleanup() {
-    remove_action( 'wp_head', 'wp_generator' );
-    remove_action( 'wp_head', 'rsd_link' );
-    remove_action( 'wp_head', 'wlwmanifest_link' );
-    remove_action( 'wp_head', 'wp_shortlink_wp_head' );
-    remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
-    remove_action( 'wp_print_styles', 'print_emoji_styles' );
-}
-add_action( 'init', 'blogthemewp_cleanup' );
+/* Note: Head cleanup (wp_generator, rsd_link, etc.) removed for WordPress.org compliance.
+ * These modifications are plugin territory. Use a security plugin if needed. */
 
 /*----------------------------------------------------------
  * ユーティリティ

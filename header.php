@@ -26,11 +26,13 @@
 <header class="site-header">
     <div class="header-inner">
         <div class="site-branding">
-            <?php if ( blogthemewp_show( 'show_site_icon' ) ) : ?>
+            <?php if ( has_custom_logo() ) : ?>
+                <?php the_custom_logo(); ?>
+            <?php elseif ( blogthemewp_show( 'show_site_icon' ) ) : ?>
                 <?php blogthemewp_site_icon(); ?>
             <?php endif; ?>
             
-            <?php if ( blogthemewp_show( 'show_site_title' ) ) : ?>
+            <?php if ( blogthemewp_show( 'show_site_title' ) && ! has_custom_logo() ) : ?>
                 <?php if ( is_front_page() ) : ?>
                     <h1 class="site-title"><a href="<?php echo esc_url( home_url() ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
                 <?php else : ?>
